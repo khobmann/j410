@@ -1,0 +1,371 @@
+
+<!doctype html>
+
+<html>
+	
+<head>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>	
+	
+	
+<!--The following displays language used in browser to interpret page -->
+<meta charset="UTF-8">
+
+<!--The following line of code displays the page title on a browser tab -->
+<title>The Cal Poly Butterfly Effect | Home</title>
+
+<!--link tags are for linking to external files, in this case your CSS stylesheet-->
+<link href="style.css" rel="stylesheet" type="text/css">
+	
+<!--link tags are for linking to external files, in this case a special CSS stylesheet-->
+<link href="normalize.css" rel="stylesheet" type="text/css">
+
+<!--the following tag tells the browser to adjust the site according to screen size-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--The following code links to the jquery library -->
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+
+<!--The following code links to the javascript file that runs the slideshow -->	
+<script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+    
+<!--The following code links to the javascript file that runs the parallax image -->    
+<script src="js/parallax.min.js"></script>
+	
+<!--The following code links to Google Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	
+<!--The following javscript runs the jquery slideshow -->
+<script type="text/javascript">
+$('#slider').cycle({});
+</script>
+
+<!--The following javascript runs the nav bar dissapear on scroll-->
+<script type="text/javascript">
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+</script>
+    
+<!--Favicon-->
+<link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
+<link rel="manifest" href="img/fav/site.webmanifest">
+<link rel="mask-icon" href="img/fav/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<!--End Favicon-->
+    
+<!--back to top button-->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}    
+</script> 
+    
+<!--The following adds favicon images -- be sure to verify paths-->
+
+<link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="img/fav/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+    
+<!-- this script is from www.javascriptfreecode.com coded by: Krishna Eydat-->
+<html>
+<head>
+<script language="javascript" type="text/javascript">
+alert("This is not the official website to be affiliated with The Butterfly Effect Foundation")
+</script>
+</head>
+</html>       
+<font face="Tahoma"><a target="_blank" href="http://www.javascriptfreecode.com/"><span style="font-size: 8pt; text-decoration: none"></span></a></font>
+
+</head>
+
+<body>
+
+<!--beginning of navigation section-->
+<header>
+<div class="nav-container">
+<div class="brand"><img src="img/logo1.png" width="130" height="85" alt=""/></div>
+<nav>
+<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+  <ul class="nav-list">
+        <li>
+          <a href="#home">The Butterfly Effect</a>
+        </li>
+	   <li>
+          <a href="#gal">Butterfly Drops</a>
+		  </li>
+	  	<li>
+          <a href="#tl">Drop Finders</a>
+        </li>
+        <li>
+          <a href="#vid">Club Members</a>
+			</li>
+      <li>
+          <a href="#num">Outreach</a>
+			</li>
+      </ul>
+</nav>
+</div>
+<!--closing navigation tag-->
+</header>
+<!--end of navigation section-->
+    
+<!--main image-->
+<div class="container">
+	
+</div>
+<!--animated welcome-->
+    <div class="centered"> 
+    <h1 class="ml2">Welcome</h1>
+    </div>
+   
+
+    
+<!--beginning of main content area-->
+<div class="row whiteBG">
+<h2 id="home">The Cal Poly Butterfly Effect</h2>
+<article>
+<p class="tab">The Butterfly Effect Theory suggests that the small flutter of a butterfly wing can affect the molecules around it, setting off a chain of reactions that lead to major change. This concept is what inspires the Cal Poly Butterfly Effect Club. Small acts of kindness and generosity can have notable and meaningful impacts.</p>
+<p class="tab"><a href="#gal">Butterfly Drops</a></p>
+</article>
+</div>
+
+<!--beginning of slideshow section-->
+<div class="row blueBG"><!--beginning of row-->
+<h2 id="gal">Butterfly Drops</h2>
+<article><!--beginning of article-->
+<p class="tab">Once a month, a wooden butterfly is hidden on Cal Poly's campus...</p>
+<!--beginning of slideshow-->
+<div id="slider"
+data-cycle-caption="#alt-caption"
+data-cycle-caption-template="{{alt}}"
+data-cycle-fx="scrollHorz"
+data-cycle-pause-on-hover="true"
+data-cycle-speed="200">
+<div class="cycle-prev"></div>
+<div class="cycle-next"></div>
+<img src="img/1.jpg" width="100%" height="100%" alt="Before the Cal Poly Butterfly Effect Club can begin one of their butterfly drops, they need someone to take on the task of painting the wooden creature."/>
+<img src="img/2.jpg" width="100%" height="100%" alt="Kinesiology senior Lucy Swift was asked by club president Sarah Ruhe to paint the butterfly after Ruhe saw the paintings Swift had made for herself in her bedroom. Swift happily obliged. “It’s a fun and effective way to get students involved in change that is bigger than themselves,” she said. “Feeling like I’ve helped this club even a little bit has made me feel honored to be a part of the change they are bringing to this campus.”"/>
+<img src="img/3.jpg" width="100%" height="100%" alt="Once Swift paints the butterfly, it will be hidden somewhere on Cal Poly’s campus. Whoever finds the butterfly chooses a charity that the club then donates $250 to."/>
+<img src="img/5.jpg" width="100%" height="100%" alt="On the day of the drop, the club hides the wooden butterfly in a chosen location before posting hints on where to find it on the club’s Instagram account. Anyone who sees the hints is able to join the hunt."/>
+<img src="img/4.jpg" width="100%" height="100%" alt="On October 18, the butterfly was placed with a mural painted by the Butterfly Effect club in Poly Canyon Village. The mural reads, “Be the change you want to see in the world.” For every 1,000 pictures taken with the mural, the club will donate $1,000 to a charity chosen by club members."/>
+<img src="img/7.jpg" width="100%" height="100%" alt="Swift used the Cheshire Cat from “Alice and Wonderland” as inspiration when painting the butterfly. Ruhe feels that this club connects her, and anyone else that helps paint, to art in a special way. “I used to avoid helping out with art projects and creative assignments,” she said. “But being surrounded by art so often has shown me the joy in [just] trying. A little creative exploration never hurt anybody.”"/>
+<img src="img/8.jpg" width="100%" height="100%" alt="The first hint posted to Instagram read, “I found a new friend,” reflecting one of Ruhe’s most rewarding experiences with this club. “Kindness has connected me with so many new people, whether they came up and talked to me while I was painting the mural or started attending club meetings,” she said."/>
+<img src="img/10.jpg" width="100%" height="100%" alt="Even after the second hint was posted to Instagram, many unsuspecting students walked by without a second glance."/>
+<img src="img/12.jpg" width="100%" height="100%" alt="Physics junior Jacob Siderman turned out finding the butterfly. He said he saw the hints for a previous drop too late and was determined to find this butterfly after missing out on the last one. The moment the first hint was posted on Instagram, he rode his bike all the way to PCV."/>
+<img src="img/13.jpg" width="100%" height="100%" alt="Siderman chose to donate the $250 to the Ability Experience, the philanthropy his fraternity actively supports. The philanthropy strives to support those with mental and physical abilities. “They do really, really, really great work and I think they promote very important social initiatives,” he said."/>
+<img src="img/9.jpg" width="100%" height="100%" alt="The Cal Poly Butterfly Effect does multiple drops throughout the school year, offering any and all students endless opportunities to make a difference."/>
+</div><!--end of slideshow-->
+<!--beginning of slideshow caption-->
+<div id="alt-caption" class="center">
+</div><!--end of slideshow caption-->
+<p class="tab"><a href="#tl">Butterfly Drop Finders</a></p>
+</article><!--end of article-->
+</div><!--end of row-->
+<!--end of slideshow section-->
+    
+	
+<!--beginning of audio section-->
+<div class="row whiteBG">
+<h2 id="tl">Butterfly Drop Finders</h2>
+<article>
+  <p class="tab">Click on the images to hear which philanthropies these butterfly hunters donated to <br>(Double-click to pause audio)</p>
+  <div class="table">
+	<div id="trip">
+<audio id="audio_1">
+    <source src="audio/CamiKamigaki.mp3" type="audio/mpeg" />
+</audio>
+            
+<audio id="audio_2">
+    <source src="audio/KylieClark.mp3" type="audio/mpeg" />
+</audio>
+            
+<audio id="audio_3">
+	<source src="audio/AustinMcLellan.mp3" type="audio/mpeg" />
+</audio>
+            
+<img src="img/rollover/Cami.jpg" class="rollover" alt="description" onMouseOver="this.src='img/rollover/Cami2.jpg'" onMouseOut="this.src='img/rollover/Cami.jpg'" onClick="document.getElementById('audio_1').play(); return false;" onDblClick="document.getElementById('audio_1').pause(); return false;">
+ /&gt; 
+            
+<img src="img/rollover/Kylie.jpg" class="rollover" alt="description" onMouseOver="this.src='img/rollover/Kylie2.jpg'" onMouseOut="this.src='img/rollover/Kylie.jpg'" onClick="document.getElementById('audio_2').play(); return false;" onDblClick="document.getElementById('audio_2').pause(); return false;">
+ /&gt;
+            
+<img src="img/rollover/Austin.jpg" class="rollover" alt="description" onMouseOver="this.src='img/rollover/Austin2.jpg'" onMouseOut="this.src='img/rollover/Austin.jpg'" onClick="document.getElementById('audio_3').play(); return false;" onDblClick="document.getElementById('audio_3').pause(); return false;">
+/&gt;
+	</div>
+</div>
+<p class="tab"><a href="#vid">Club Members</a></p>		
+</article>
+</div>
+<!--end of audio section-->
+    
+    <!--beginning of parallax image-->
+<div class="parallax" data-parallax="scroll" data-bleed="10" data-speed="0.2" iosFix="true" data-image-src="img/parallax.jpg">
+</div>
+<!--end of parallax image-->
+
+<!--beginning of video section-->
+<div class="row orangeBG">
+<h2 id="vid">Student experiences</h2>
+<article>
+<p class="tab">Cal Poly students share what The Butterfly Effect means to them</p>	
+<video width="100%" height="100%" poster="img/videostill.jpg" controls>
+<source src="img/video.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<p class="tab"><a href="#num">Outreach</a></p>
+</article>
+</div>
+<!--end of video section-->
+
+<!--beginning of new section-->
+<div class="row whiteBG">
+<h2 id="num">Outreach</h2>
+<article>
+<p class="tab"></p>
+<div class="piktowrapper-embed" style="height: 300px; position: relative;" data-uid="42642804-j410"><div class="pikto-canvas-wrap"><div class="pikto-canvas"><div class="embed-loading-overlay" style="width: 100%; height: 100%; position: absolute; text-align: center;"><img width="60px" alt="Loading..." style="margin-top: 100px" src="https://create.piktochart.com/loading.gif"/><p style="margin: 0; padding: 0; font-family: Lato, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 16px">Loading...</p></div></div></div></div><script>(function(d){var js, id="pikto-embed-js", ref=d.getElementsByTagName("script")[0];if (d.getElementById(id)) { return;}js=d.createElement("script"); js.id=id; js.async=true;js.src="https://create.piktochart.com/assets/embedding/embed.js";ref.parentNode.insertBefore(js, ref);}(document));</script>
+</article>
+</div>
+<!--end of new section-->
+	
+<!--beginning of footer-->
+<footer>The Cal Poly Butterfly Effect | San Luis Obispo, CA | <a href="mailto: kallynhobmann@gmail.com?Subject=Inquiry" target="_top">Send Email</a> | Copyright 2019 | Site by Kallyn Hobmann 
+</footer>
+<!--end of footer-->
+	
+</body>
+    
+    <script>
+        // Wrap every letter in a span
+var textWrapper = document.querySelector('.ml2');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml2 .letter',
+    scale: [4,1],
+    opacity: [0,5],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 950,
+    delay: (el, i) => 70*i
+  }).add({
+    targets: '.ml2',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+    </script>
+	
+<!--the following script controls the responsive navigation-->
+<script>
+	(function($) { // Begin jQuery
+  $(function() { // DOM ready
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      // Close one dropdown when selecting another
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    // Clicking away from dropdown will remove the dropdown class
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    // Toggle open and close nav styles on click
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    // Hamburger to X toggle
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); // end DOM ready
+})(jQuery); // end jQuery
+	</script>
+	<script>
+	var headertext = [];
+var headers = document.querySelectorAll("#miyazaki th"),
+tablerows = document.querySelectorAll("#miyazaki th"),
+tablebody = document.querySelector("#miyazaki tbody");
+for(var i = 0; i < headers.length; i++) {
+	var current = headers[i];
+	headertext.push( current.textContent.replace( /\r?\n|\r/,"") );
+}
+for (var i = 0, row; row = tablebody.rows[i]; i++) {
+	for (var j = 0, col; col = row.cells[j]; j++) {
+		col.setAttribute("data-th", headertext[j]);
+	}
+}
+</script>
+	
+	<!----Prevents audio tracks from playing simultaneously---->
+<script>
+document.addEventListener('play', function(e){
+    var audios = document.getElementsByTagName('audio');
+    for(var i = 0, len = audios.length; i < len;i++){
+        if(audios[i] != e.target){
+            audios[i].pause();
+        }
+    }
+}, true);
+    </script>
+
+</html>
